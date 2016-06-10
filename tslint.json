@@ -1,0 +1,10 @@
+{
+  "rules": {
+    "comment-format": [true, "check-space"],
+    "indent": [true, "tabs"],
+    "semicolon": [true, "never"],
+    "no-unused-variable": [true, "react"],
+    "no-unreachable": true,
+    "no-var-keyword": true
+  }
+}

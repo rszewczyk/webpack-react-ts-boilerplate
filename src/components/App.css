@@ -1,0 +1,3 @@
+.appHeader {
+	composes: f4 underline from "tachyons/css/tachyons.css";
+}
