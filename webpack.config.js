@@ -20,7 +20,7 @@ const cssLoader = isProd
 const loaders = [{
 	test: /\.tsx?$/,
 	loader: 'babel!ts-loader',
-	include: path.join(__dirname, 'src/components'),
+	include: path.join(__dirname, 'src'),
 }, {
 	test: /\.jsx?$/,
 	loader: 'babel',
@@ -29,8 +29,7 @@ const loaders = [{
 	test: /\.css$/,
 	loader: cssLoader,
 	include: [
-		path.join(__dirname, 'src/components'),
-		path.join(__dirname, 'node_modules/tachyons/css/tachyons.css'),
+		path.join(__dirname, 'src'),
 	],
 }]
 

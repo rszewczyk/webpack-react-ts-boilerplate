@@ -2,7 +2,7 @@ import * as React from 'react'
 import { render } from 'react-dom'
 
 // normalize css
-import 'tachyons/css/tachyons.css'
+import './index.css'
 
 import App from './components/App.tsx'
 
