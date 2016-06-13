@@ -1,1 +1,1 @@
-export const appHeader: string;
+export default {};

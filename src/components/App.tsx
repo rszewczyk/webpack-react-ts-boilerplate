@@ -1,14 +1,22 @@
 import * as React from 'react'
-import { appHeader } from './App.css'
 
-export interface AppProps { text: string }
+import Header from './Header.tsx'
 
-export default class App extends React.Component<AppProps, {}> {
+const navItems = [
+	"A Nav Option",
+	"Another Nav Option",
+	"Navigation",
+	"Go To Nav",
+]
+
+export default class App extends React.Component<{}, {}> {
 	render() {
 		return (
-			<div>
-				<p className={appHeader}>{this.props.text}</p>
-			</div>
+			<main>
+				<Header navItems={navItems} />
+				<section>
+				</section>
+			</main>
 		)
 	}
 }

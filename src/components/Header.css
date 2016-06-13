@@ -1,0 +1,81 @@
+.header {
+	composes: w-100 dt pa3 bg-black-90 from "tachyons";
+}
+
+.headerCell {
+	composes: dtc v-mid from "tachyons";
+}
+
+.headerLogo {
+	composes: headerCell;
+	composes: tl w-25 from "tachyons";
+}
+
+.headerNav {
+	composes: headerCell;
+	composes: tl w-60 from "tachyons";
+}
+
+.headerMenu {
+	composes: headerCell;
+	composes: tr w-100 from "tachyons";
+}
+
+.navItem {
+	composes: f6 white mr3 mr4-l from "tachyons";
+}
+
+.navItem::after {
+	display: block;
+	content: attr(title);
+	font-weight: bold;
+	height: 1px;
+	color: transparent;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+.navItemSelectable {
+	composes: dim dib fw3 from "tachyons";
+	cursor: pointer;
+}
+
+.navItemCollapsible {
+	composes: dn dib-ns fw3 dim from "tachyons";
+	cursor: pointer;
+}
+
+.navItemSelected {
+	composes: fw6 dib from "tachyons";
+}
+
+.navShowMoreWrapper {
+	composes: dn-ns from "tachyons";
+}
+.navShowMore {
+	composes: navItem;
+	composes: dn-ns dim from "tachyons";
+	composes: fa fa-ellipsis-h from "font-awesome/css/font-awesome.css";
+	cursor: pointer;
+}
+
+.navShowMoreClose {
+	composes: navItem;
+	composes: fr from "tachyons";
+	composes: fa fa-times from "font-awesome/css/font-awesome.css";
+	cursor: pointer;
+}
+
+.logo {
+	composes: f5 f4-ns white fw5 dim mr4 tracked from "tachyons";
+	cursor: pointer;
+}
+
+.menuIcon {
+	composes: fa fa-cog from "font-awesome/css/font-awesome.css";
+	composes: white dim f6 from "tachyons";
+}
+
+.hidden {
+	composes: dn from "tachyons";
+}
